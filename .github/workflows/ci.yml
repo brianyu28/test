@@ -1,0 +1,10 @@
+name: Testing
+on: push
+
+jobs:
+    test_project:
+        name: Test project
+        steps:
+            - name: Run Django unit tests
+            - runs_on: python:3
+            - run: python manage.py test
